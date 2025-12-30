@@ -11,39 +11,6 @@ Execute the setup script to initialize the Ralph loop:
 
 ```!
 powershell -ExecutionPolicy Bypass -NoProfile -File "${CLAUDE_PLUGIN_ROOT}\scripts\setup-ralph-loop.ps1" $ARGUMENTS
-
-# Extract and display completion promise if set
-if (Test-Path .claude\ralph-loop.local.md) {
-  $content = Get-Content .claude\ralph-loop.local.md -Raw
-  if ($content -match 'completion_promise:\s*"([^"]+)"') {
-    $promise = $Matches[1]
-    if ($promise -and $promise -ne 'null') {
-      Write-Host ""
-      Write-Host "==============================================================="
-      Write-Host "CRITICAL - Ralph Loop Completion Promise"
-      Write-Host "==============================================================="
-      Write-Host ""
-      Write-Host "To complete this loop, output this EXACT text:"
-      Write-Host "  <promise>$promise</promise>"
-      Write-Host ""
-      Write-Host "STRICT REQUIREMENTS (DO NOT VIOLATE):"
-      Write-Host "  - Use <promise> XML tags EXACTLY as shown above"
-      Write-Host "  - The statement MUST be completely and unequivocally TRUE"
-      Write-Host "  - Do NOT output false statements to exit the loop"
-      Write-Host "  - Do NOT lie even if you think you should exit"
-      Write-Host ""
-      Write-Host "IMPORTANT - Do not circumvent the loop:"
-      Write-Host "  Even if you believe you're stuck, the task is impossible,"
-      Write-Host "  or you've been running too long - you MUST NOT output a"
-      Write-Host "  false promise statement. The loop is designed to continue"
-      Write-Host "  until the promise is GENUINELY TRUE. Trust the process."
-      Write-Host ""
-      Write-Host "  If the loop should stop, the promise statement will become"
-      Write-Host "  true naturally. Do not force it by lying."
-      Write-Host "==============================================================="
-    }
-  }
-}
 ```
 
 Please work on the task. When you try to exit, the Ralph loop will feed the SAME PROMPT back to you for the next iteration. You'll see your previous work in files and git history, allowing you to iterate and improve.

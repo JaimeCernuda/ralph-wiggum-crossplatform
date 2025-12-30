@@ -202,3 +202,30 @@ if ($prompt) {
     Write-Host ""
     Write-Host $prompt
 }
+
+# Display completion promise warning if set
+if ($completionPromise -and $completionPromise -ne "null") {
+    Write-Host ""
+    Write-Host "==============================================================="
+    Write-Host "CRITICAL - Ralph Loop Completion Promise"
+    Write-Host "==============================================================="
+    Write-Host ""
+    Write-Host "To complete this loop, output this EXACT text:"
+    Write-Host "  <promise>$completionPromise</promise>"
+    Write-Host ""
+    Write-Host "STRICT REQUIREMENTS (DO NOT VIOLATE):"
+    Write-Host "  - Use <promise> XML tags EXACTLY as shown above"
+    Write-Host "  - The statement MUST be completely and unequivocally TRUE"
+    Write-Host "  - Do NOT output false statements to exit the loop"
+    Write-Host "  - Do NOT lie even if you think you should exit"
+    Write-Host ""
+    Write-Host "IMPORTANT - Do not circumvent the loop:"
+    Write-Host "  Even if you believe you're stuck, the task is impossible,"
+    Write-Host "  or you've been running too long - you MUST NOT output a"
+    Write-Host "  false promise statement. The loop is designed to continue"
+    Write-Host "  until the promise is GENUINELY TRUE. Trust the process."
+    Write-Host ""
+    Write-Host "  If the loop should stop, the promise statement will become"
+    Write-Host "  true naturally. Do not force it by lying."
+    Write-Host "==============================================================="
+}
