@@ -18,17 +18,27 @@ The Ralph Wiggum technique is an iterative development methodology based on cont
 
 ## Installation
 
-### Option 1: Clone and add locally
+### Option 1: Direct install (recommended)
+
+```powershell
+claude plugin add JaimeCernuda/ralph-wiggum-windows
+```
+
+### Option 2: Add marketplace and install
+
+```powershell
+# Add the marketplace
+claude plugin marketplace add JaimeCernuda/ralph-wiggum-windows
+
+# Install the plugin
+claude plugin install ralph-wiggum-windows
+```
+
+### Option 3: Clone and add locally
 
 ```powershell
 git clone https://github.com/JaimeCernuda/ralph-wiggum-windows.git
 claude plugin add ./ralph-wiggum-windows
-```
-
-### Option 2: Add directly from GitHub
-
-```powershell
-claude plugin add https://github.com/JaimeCernuda/ralph-wiggum-windows
 ```
 
 ## Usage

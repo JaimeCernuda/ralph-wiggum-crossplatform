@@ -1,8 +1,8 @@
 {
-  "name": "ralph-wiggum",
+  "name": "ralph-wiggum-windows",
   "description": "Windows port of the Ralph Wiggum technique - continuous self-referential AI loops for interactive iterative development. Run Claude in a while-true loop with the same prompt until task completion. Uses PowerShell for Windows compatibility.",
   "author": {
-    "name": "Anthropic (Windows port)",
-    "email": "support@anthropic.com"
+    "name": "Jaime Cernuda",
+    "email": "jaime@cernuda.com"
   }
 }
