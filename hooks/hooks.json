@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -ExecutionPolicy Bypass -NoProfile -File \"${CLAUDE_PLUGIN_ROOT}\\hooks\\stop-hook.ps1\""
+            "command": "powershell.exe -ExecutionPolicy Bypass -NoProfile -File '${CLAUDE_PLUGIN_ROOT}/hooks/stop-hook.ps1'"
           }
         ]
       }
