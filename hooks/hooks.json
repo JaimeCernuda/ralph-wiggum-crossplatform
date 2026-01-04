@@ -1,12 +1,12 @@
 {
-  "description": "Ralph Wiggum plugin stop hook for self-referential loops (Windows/PowerShell)",
+  "description": "Ralph Wiggum plugin stop hook for self-referential loops (cross-platform)",
   "hooks": {
     "Stop": [
       {
         "hooks": [
           {
             "type": "command",
-            "command": "powershell.exe -ExecutionPolicy Bypass -NoProfile -File ${CLAUDE_PLUGIN_ROOT}\\hooks\\stop-hook.ps1"
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/hooks/stop-hook.py\""
           }
         ]
       }
