@@ -1,6 +1,6 @@
 {
-  "name": "ralph-wiggum-windows",
-  "description": "Windows port of the Ralph Wiggum technique - continuous self-referential AI loops for interactive iterative development. Run Claude in a while-true loop with the same prompt until task completion. Uses PowerShell for Windows compatibility.",
+  "name": "ralph-wiggum-crossplatform",
+  "description": "Cross-platform Ralph Wiggum technique - continuous self-referential AI loops for interactive iterative development. Run Claude in a while-true loop with the same prompt until task completion. Uses Python for cross-platform compatibility.",
   "author": {
     "name": "Jaime Cernuda",
     "email": "jcernudagarcia@hawk.illinoistech.edu"
